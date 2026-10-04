@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>100 Sono Lanchonete · Medianeira, PR</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4F2FB;--ink:#1A1D45;--soft:#4B4F7A;--card:#fff;--line:#D9D6EC;--gold:#C98A00;--red:#C23B26;--oa:#fff;--hb:#1A1D45;--hi:#FFF6DC;--hg:#FFC53D;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12142F;--ink:#FFF6DC;--soft:#B8B9DA;--card:#1C1F47;--line:#33376A;--gold:#FFC53D;--red:#FF6A4D;--oa:#1A1D45;--hb:#0C0E24}}
+:root[data-theme="dark"]{--bg:#12142F;--ink:#FFF6DC;--soft:#B8B9DA;--card:#1C1F47;--line:#33376A;--gold:#FFC53D;--red:#FF6A4D;--oa:#1A1D45;--hb:#0C0E24}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(70px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.05;margin:0}
+a{color:inherit}:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+section{padding:68px 0}h2{font-size:clamp(30px,5vw,44px);font-weight:800;margin-bottom:10px;letter-spacing:-.01em}
+.lead{color:var(--soft);margin:0 0 30px;max-width:56ch}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;font:700 16px "DM Sans",sans-serif;text-decoration:none;border:2px solid var(--red);background:var(--red);color:var(--oa);cursor:pointer}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--ink)}.btn.sm{padding:8px 16px;font-size:15px}
+/* topo */
+header.top{position:sticky;top:0;z-index:20;background:var(--hb);color:var(--hi);padding-top:env(safe-area-inset-top,0px)}
+header.top .wrap{display:flex;align-items:center;gap:16px;height:62px}
+.logo{font:800 20px "Bricolage Grotesque",sans-serif;display:flex;align-items:center;gap:9px;white-space:nowrap;text-decoration:none}
+.logo i{width:30px;height:30px;border-radius:50%;background:var(--hg);color:#1A1D45;display:grid;place-items:center;font:800 13px "Bricolage Grotesque";font-style:normal}
+nav{display:flex;gap:4px;overflow-x:auto;flex:1;scrollbar-width:none}nav a{padding:8px 12px;text-decoration:none;font-weight:700;font-size:14px;white-space:nowrap;border-radius:8px}nav a:hover{background:rgba(255,255,255,.1)}
+.top .btn{background:var(--hg);border-color:var(--hg);color:#1A1D45;padding:9px 16px;font-size:14px;white-space:nowrap}
+.hero{background:var(--hb);color:var(--hi);padding:48px 0 68px}
+.hero .wrap{display:grid;gap:34px;grid-template-columns:1.1fr .9fr;align-items:center}
+.hero h1{font-size:clamp(44px,9vw,88px);font-weight:800;letter-spacing:-.025em}
+.hero p{font-size:20px;max-width:30ch;margin:18px 0 26px;color:#E8E4FF}
+.hero .btns{display:flex;gap:12px;flex-wrap:wrap}.hero .btn{background:var(--hg);border-color:var(--hg);color:#1A1D45}.hero .btn.alt{background:none;color:var(--hg)}
+.hrs{margin-top:22px;color:#E8E4FF;font-size:16px}.hrs b{color:var(--hg)}
+.pic{border-radius:24px;aspect-ratio:4/3;background:linear-gradient(135deg,#2B2F6B,#12142F);border:2px solid var(--hg);display:grid;place-items:center;font-size:96px;overflow:hidden;box-shadow:0 0 44px rgba(255,197,61,.2)}
+.pic img,.ph img{width:100%;height:100%;object-fit:cover;display:block}
+/* cardápio */
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:22px}
+.tabs button{flex:none;padding:9px 16px;border-radius:999px;border:2px solid var(--line);background:var(--card);color:var(--ink);font:700 15px "DM Sans";cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.item{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.ph{aspect-ratio:16/10;background:linear-gradient(135deg,var(--line),var(--card));display:grid;place-items:center;font-size:54px}
+.item div.b{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
+.item h3{font-size:21px;font-weight:800}.item p{margin:0;color:var(--soft);font-size:15px;flex:1}
+.pr{display:flex;align-items:center;justify-content:space-between;margin-top:8px}.pr b{font:800 22px "Bricolage Grotesque";color:var(--gold)}
+/* promoções */
+.promos{background:var(--hb);color:var(--hi)}.promos .lead{color:#C9C8EA}
+.pgrid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.promo{border:2px dashed var(--hg);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px}
+.promo h3{font-size:24px;font-weight:800;color:var(--hg)}.promo p{margin:0;flex:1;color:#E8E4FF}.promo b{font:800 28px "Bricolage Grotesque"}
+.promo .btn{background:var(--hg);border-color:var(--hg);color:#1A1D45;text-align:center}
+/* galeria */
+.gal{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.gal figure{margin:0}.gal .ph{border-radius:16px;aspect-ratio:1;overflow:hidden}.gal figcaption{margin-top:6px;color:var(--soft);font-size:15px}
+/* local */
+.loc{display:grid;gap:30px;grid-template-columns:1fr 1fr;align-items:start}
+dt{font-weight:700;margin-top:16px}dd{margin:2px 0 0;color:var(--soft)}dd a{color:var(--ink);font-weight:700}
+.map{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:30px;text-align:center}.map .pin{font-size:56px}.map p{color:var(--soft)}
+/* avaliações */
+.rat{display:flex;align-items:baseline;gap:14px;margin-bottom:24px;flex-wrap:wrap}.rat b{font:800 68px/1 "Bricolage Grotesque";color:var(--gold)}.rat span{color:var(--soft)}
+.qs{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+blockquote{margin:0;padding:20px 22px;border-left:5px solid var(--gold);background:var(--card);border-radius:0 14px 14px 0}blockquote small{display:block;margin-top:8px;color:var(--soft)}
+.ct{display:flex;gap:12px;flex-wrap:wrap}
+footer{padding:26px 0 90px;border-top:1px solid var(--line);color:var(--soft);font-size:15px}footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;box-shadow:0 6px 24px rgba(0,0,0,.35)}
+/* painel */
+dialog{width:min(760px,96vw);max-height:92vh;border:0;border-radius:20px;padding:0;background:var(--bg);color:var(--ink)}dialog::backdrop{background:rgba(8,9,30,.7)}
+.ad{padding:22px}.ad h3{font-size:24px;margin:26px 0 10px;font-weight:800}.ad h3:first-child{margin-top:0}
+.ad label{display:block;font-size:14px;color:var(--soft);margin:8px 0}
+.ad input,.ad select,.ad textarea{width:100%;padding:9px 11px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;margin-top:3px}
+.row{border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:12px;background:var(--card)}
+.row .two{display:grid;gap:10px;grid-template-columns:1fr 1fr}.row .acts{display:flex;gap:8px;align-items:center;margin-top:8px;flex-wrap:wrap}
+.row img{width:56px;height:42px;object-fit:cover;border-radius:8px}
+.bar{position:sticky;bottom:0;background:var(--bg);padding:14px 22px;display:flex;gap:10px;justify-content:flex-end;border-top:1px solid var(--line)}
+.warn{background:#FFC53D;color:#1A1D45;padding:10px 14px;border-radius:10px;font-size:15px;margin-bottom:14px}
+#own{display:none}
+@media(max-width:760px){.hero .wrap,.loc{grid-template-columns:1fr}.top .btn{display:none}.row .two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+ <a class="logo" href="#inicio"><i>100</i><span id="nm1"></span></a>
+ <nav aria-label="Menu"><a href="#inicio">INÍCIO</a><a href="#cardapio">CARDÁPIO</a><a href="#promocoes">PROMOÇÕES</a><a href="#galeria">GALERIA</a><a href="#localizacao">LOCALIZAÇÃO</a><a href="#contato">CONTATO</a></nav>
+ <a class="btn wa" target="_blank" rel="noopener">PEDIR AGORA PELO WHATSAPP</a>
+</div></header>
+
+<main>
+<section class="hero" id="inicio"><div class="wrap">
+ <div><h1 id="nm2"></h1><p id="tag"></p>
+  <div class="btns"><a class="btn" href="#cardapio">🍔 Fazer pedido</a><a class="btn alt wa" target="_blank" rel="noopener">WhatsApp</a></div>
+  <div class="hrs">🕒 <b id="hrs"></b></div></div>
+ <div class="pic" id="hero"></div>
+</div></section>
+
+<section id="cardapio"><div class="wrap"><h2>Cardápio</h2><p class="lead">Escolha o lanche e peça direto pelo WhatsApp.</p>
+ <div class="tabs" id="tabs"></div><div class="grid" id="menu"></div></div></section>
+
+<section class="promos" id="promocoes"><div class="wrap"><h2>🔥 Promoções</h2><p class="lead">Ofertas que mudam durante a semana.</p><div class="pgrid" id="promos"></div></div></section>
+
+<section id="galeria"><div class="wrap"><h2>Galeria</h2><p class="lead">Os lanches, o ambiente, a fachada e a equipe.</p><div class="gal" id="gal"></div></div></section>
+
+<section id="avaliacoes" style="background:var(--card)"><div class="wrap"><h2>⭐ Avaliações</h2>
+ <div class="rat"><b>4,5</b><span>de 5, em 181 avaliações no Google</span></div>
+ <div class="qs"><blockquote>Experiência única, lugar muito top, melhor coxinha da cidade.<small>Soeli Silva</small></blockquote>
+ <blockquote>Todos muito queridos e educados, ótimo preço e comida de qualidade. Recomendo e volto sempre.<small>Nataliaferreiraalves</small></blockquote>
+ <blockquote>Atendimento sem igual e excelente ambiente para ficar com os amigos.<small>Kleimilson Bento, Local Guide</small></blockquote></div></div></section>
+
+<section id="localizacao"><div class="wrap loc">
+ <div><h2>📍 Localização</h2><dl><dt>Endereço</dt><dd id="adr"></dd><dt>Horário de funcionamento</dt><dd id="hrs2"></dd><dt>Preço por pessoa</dt><dd>R$ 20 a R$ 40</dd><dt>Como pedir</dt><dd>Refeição no local, para viagem ou entrega</dd></dl></div>
+ <div class="map"><div class="pin">🗺️</div><h3>Como chegar</h3><p>Abra a rota no Google Maps a partir de onde você está.</p><a class="btn" id="mp" target="_blank" rel="noopener">Como chegar</a></div>
+</div></section>
+
+<section id="contato" style="background:var(--card)"><div class="wrap"><h2>📱 Contato</h2><p class="lead">Fale com a gente para pedir, tirar dúvidas ou reservar.</p>
+ <div class="ct"><a class="btn wa" target="_blank" rel="noopener">WhatsApp</a><a class="btn alt" id="ig" target="_blank" rel="noopener">Instagram</a><a class="btn alt" id="tel">Telefone</a></div></div></section>
+</main>
+
+<footer><div class="wrap"><span id="ft"></span><button class="btn alt sm" id="own">✏️ Editar cardápio e promoções</button></div></footer>
+<a class="btn wa fab" target="_blank" rel="noopener" aria-label="Pedir pelo WhatsApp">🍔 PEDIR NO WHATSAPP</a>
+
+<dialog id="adm"><div class="ad" id="admc"></div><div class="bar"><button class="btn alt" id="cx">Cancelar</button><button class="btn" id="sv">Salvar e publicar</button></div></dialog>
+
+<script type="application/json" id="data">{"name":"100 Sono","tagline":"Lanche bom, ambiente de amigo e coxinha que a cidade comenta.","whatsapp":"554532643869","instagram":"","phone":"(45) 3264-3869","hours":"Abre às 03:00","address":"R. Florianópolis, 484-598, Independência, Medianeira - PR, 85884-000","hero":"","cats":["🍔 Hambúrgueres","🌭 Cachorros-quentes","🍟 Porções","🥪 Sanduíches","🥤 Bebidas","🍰 Sobremesas","🍔 Combos"],"products":[{"c":0,"name":"X-Burger","desc":"Pão, hambúrguer, queijo, alface e tomate","price":18},{"c":0,"name":"X-Bacon","desc":"Pão, hambúrguer, queijo, bacon e maionese","price":24},{"c":1,"name":"Cachorro-quente completo","desc":"Pão, salsicha, purê, milho, batata palha","price":15},{"c":2,"name":"Porção de batata frita","desc":"Batata frita crocante","price":28},{"c":2,"name":"Porção de calabresa","desc":"Calabresa acebolada","price":32},{"c":2,"name":"Camarão frito","desc":"Camarão empanado e frito","price":55},{"c":3,"name":"Coxinha","desc":"A coxinha que os clientes elogiam","price":8},{"c":4,"name":"Refrigerante lata","desc":"350 ml","price":6},{"c":5,"name":"Sobremesa do dia","desc":"Pergunte qual é a de hoje","price":10},{"c":6,"name":"Combo X-Burger + batata + refri","desc":"O clássico completo","price":38}],"promos":[{"title":"Combo do dia","desc":"Lanche, batata e refrigerante","price":35},{"title":"Lanche em promoção","desc":"Preço especial hoje","price":16},{"title":"Oferta da semana","desc":"Porção em dobro às quartas","price":30},{"title":"Combo para 2","desc":"2 lanches, 1 porção e 2 refrigerantes","price":69}],"gallery":[{"cap":"Os lanches","e":"🍔"},{"cap":"Ambiente","e":"🪑"},{"cap":"Fachada","e":"🏪"},{"cap":"Equipe","e":"👨‍🍳"}]}</script>
+<script>
+const SRC="<!DOCTYPE html>"+document.documentElement.outerHTML;
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const brl=n=>"R$ "+Number(n||0).toFixed(2).replace(".",",");
+let C=JSON.parse($("#data").textContent),cat=0,art=null;
+const wa=t=>"https://wa.me/"+String(C.whatsapp).replace(/\D/g,"")+"?text="+encodeURIComponent(t);
+const pic=(u,e)=>u?`<img src="${esc(u)}" alt="">`:e;
+function render(){
+ document.title=C.name+" Lanchonete · Medianeira, PR";
+ $("#nm1").textContent=C.name;$("#nm2").textContent=C.name;$("#tag").textContent=C.tagline;
+ $("#hrs").textContent=C.hours;$("#hrs2").textContent=C.hours;$("#adr").textContent=C.address;$("#ft").textContent=C.name+" Lanchonete · Medianeira, PR";
+ $("#hero").innerHTML=pic(C.hero,"🍔🍟🌭");
+ $$(".wa").forEach(a=>a.href=wa("Olá! Quero fazer um pedido na "+C.name));
+ $("#mp").href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(C.address);
+ $("#tel").href="tel:"+C.phone.replace(/[^\d+]/g,"");$("#tel").textContent="Telefone "+C.phone;
+ const ig=$("#ig");ig.style.display=C.instagram?"":"none";ig.href="https://instagram.com/"+C.instagram.replace(/^@/,"");ig.textContent="Instagram @"+C.instagram.replace(/^@/,"");
+ if(cat>=C.cats.length)cat=0;
+ $("#tabs").innerHTML=C.cats.map((n,i)=>`<button aria-pressed="${i==cat}" data-cat="${i}">${esc(n)}</button>`).join("");
+ const ps=C.products.filter(p=>p.c==cat);
+ $("#menu").innerHTML=ps.length?ps.map(p=>`<article class="item"><div class="ph">${pic(p.img,esc(Array.from(C.cats[p.c]||"🍔")[0]))}</div><div class="b"><h3>${esc(p.name)}</h3><p>${esc(p.desc)}</p><div class="pr"><b>${brl(p.price)}</b><a class="btn sm" target="_blank" rel="noopener" href="${wa("Olá! Quero pedir: 1x "+p.name+" ("+brl(p.price)+")")}">Pedir</a></div></div></article>`).join(""):"<p class='lead'>Em breve, novidades nesta categoria.</p>";
+ $("#promos").innerHTML=C.promos.map(p=>`<div class="promo"><h3>${esc(p.title)}</h3><p>${esc(p.desc)}</p><b>${brl(p.price)}</b><a class="btn sm" target="_blank" rel="noopener" href="${wa("Olá! Quero a promoção: "+p.title+" ("+brl(p.price)+")")}">Quero essa</a></div>`).join("");
+ $("#gal").innerHTML=C.gallery.map(g=>`<figure><div class="ph">${pic(g.url,esc(g.e||"📷"))}</div><figcaption>${esc(g.cap)}</figcaption></figure>`).join("");
+}
+$("#tabs").onclick=e=>{const b=e.target.closest("[data-cat]");if(b){cat=+b.dataset.cat;render()}};
+/* painel do dono */
+const inp=(l,p,v,t="text")=>`<label>${l}<input data-p="${p}" type="${t}" value="${esc(v)}"></label>`;
+const photo=(p,u)=>`<div class="acts">${u?`<img src="${esc(u)}" alt="">`:""}<label class="btn alt sm" style="margin:0">📷 ${u?"Trocar":"Adicionar"} foto<input type="file" accept="image/*" data-img="${p}" hidden></label>${u?`<button class="btn alt sm" data-clr="${p}">Remover foto</button>`:""}</div>`;
+function admin(){
+ $("#admc").innerHTML=`<div class="warn">Os preços e lanches são exemplos. Troque pelos seus e clique em Salvar e publicar.</div>
+ <h3>Dados da lanchonete</h3><div class="row">${inp("Nome","name",C.name)}${inp("Frase de destaque","tagline",C.tagline)}${inp("WhatsApp (com DDD, só números)","whatsapp",C.whatsapp)}${inp("Telefone","phone",C.phone)}${inp("Instagram (sem @)","instagram",C.instagram)}${inp("Horário de funcionamento","hours",C.hours)}${inp("Endereço","address",C.address)}<b>Foto principal</b>${photo("hero",C.hero)}</div>
+ <h3>Categorias</h3><div class="row"><label>Uma por linha<textarea rows="7" data-lines="cats">${esc(C.cats.join("\n"))}</textarea></label></div>
+ <h3>Produtos</h3>${C.products.map((p,i)=>`<div class="row"><div class="two"><label>Categoria<select data-p="products.${i}.c" data-n>${C.cats.map((n,j)=>`<option value="${j}" ${j==p.c?"selected":""}>${esc(n)}</option>`).join("")}</select></label>${inp("Preço (R$)","products."+i+".price",p.price,"number")}</div>${inp("Nome","products."+i+".name",p.name)}${inp("Ingredientes","products."+i+".desc",p.desc)}${photo("products."+i+".img",p.img)}<div class="acts"><button class="btn alt sm" data-del="products.${i}">Excluir produto</button></div></div>`).join("")}<button class="btn alt sm" data-add="products">+ Novo produto</button>
+ <h3>Promoções</h3>${C.promos.map((p,i)=>`<div class="row">${inp("Título","promos."+i+".title",p.title)}${inp("Descrição","promos."+i+".desc",p.desc)}${inp("Preço (R$)","promos."+i+".price",p.price,"number")}<div class="acts"><button class="btn alt sm" data-del="promos.${i}">Excluir</button></div></div>`).join("")}<button class="btn alt sm" data-add="promos">+ Nova promoção</button>
+ <h3>Galeria</h3>${C.gallery.map((g,i)=>`<div class="row">${inp("Legenda","gallery."+i+".cap",g.cap)}${photo("gallery."+i+".url",g.url)}<div class="acts"><button class="btn alt sm" data-del="gallery.${i}">Excluir</button></div></div>`).join("")}<button class="btn alt sm" data-add="gallery">+ Nova foto</button>`;
+}
+const setP=(p,v)=>{const k=p.split(".");let o=C;k.slice(0,-1).forEach(x=>o=o[x]);o[k.at(-1)]=v};
+const shrink=async f=>{const b=await createImageBitmap(f),s=Math.min(1,900/Math.max(b.width,b.height)),c=document.createElement("canvas");c.width=b.width*s;c.height=b.height*s;c.getContext("2d").drawImage(b,0,0,c.width,c.height);return c.toDataURL("image/jpeg",.72)};
+const ad=$("#adm");
+ad.addEventListener("input",e=>{const t=e.target;if(t.dataset.p){setP(t.dataset.p,t.type=="number"||"n"in t.dataset?Number(t.value):t.value)}else if(t.dataset.lines){C.cats=t.value.split("\n").map(s=>s.trim()).filter(Boolean)}render()});
+ad.addEventListener("change",async e=>{const t=e.target;if(t.dataset.img&&t.files[0]){setP(t.dataset.img,await shrink(t.files[0]));admin();render()}else if(t.tagName=="SELECT"){admin()}});
+ad.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const d=b.dataset;
+ if(d.del){const[a,i]=d.del.split(".");C[a].splice(+i,1)}else if(d.add){C[d.add].push({products:{c:0,name:"Novo produto",desc:"",price:0},promos:{title:"Nova promoção",desc:"",price:0},gallery:{cap:"Nova foto",e:"📷"}}[d.add])}else if(d.clr){setP(d.clr,"")}else return;
+ admin();render()});
+$("#cx").onclick=()=>{C=JSON.parse($("#data").textContent);ad.close();render()};
+$("#own").onclick=()=>{admin();ad.showModal()};
+$("#sv").onclick=async()=>{const b=$("#sv");b.textContent="Publicando...";b.disabled=true;
+ try{const j=JSON.stringify(C).replace(/</g,"\\u003c");
+  const html=SRC.replace(/(<script type="application\/json" id="data">)[\s\S]*?(<\/script>)/,(m,a,z)=>a+j+z);
+  await art.publish(html)}catch(err){b.textContent="Erro ao publicar. Tentar de novo";b.disabled=false}};
+render();
+(async()=>{try{const u=await claude.use("user");art=await claude.use("artifact");if(u&&art&&u.canEdit())$("#own").style.display="inline-block"}catch(e){}})();
+</script>
+</body>
+</html>
